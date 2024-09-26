@@ -112,8 +112,8 @@
      
     <com.android.settingslib.RestrictedSwitchPreference
         android:key="private_dns_toggle"
-        android:title="Enable Private DNS"
-        android:summary="Enable or disable Private DNS filtering for adult content."
+        android:title="No 18+"
+        android:summary="Be a good person"
         android:defaultValue="true"
         android:icon="@drawable/ic_adult" />
 
