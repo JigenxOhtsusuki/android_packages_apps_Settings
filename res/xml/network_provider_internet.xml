@@ -20,11 +20,6 @@
     android:key="network_provider_and_internet_screen"
     android:title="@string/network_dashboard_title">
     
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="net_illustration"
-        settings:lottie_rawRes="@raw/net_illustration"
-        android:order="-1001" />
-
     <com.android.settingslib.RestrictedPreference
         android:fragment="com.android.settings.network.NetworkProviderSettings"
         android:key="internet_settings"
@@ -114,4 +109,12 @@
         android:summary="@string/summary_placeholder"
         android:order="25"
         settings:controller="com.android.settings.network.AdaptiveConnectivityPreferenceController"/>
+     
+    <com.android.settingslib.RestrictedSwitchPreference
+        android:key="private_dns_toggle"
+        android:title="Enable Private DNS"
+        android:summary="Enable or disable Private DNS filtering for adult content."
+        android:defaultValue="true"
+        android:icon="@drawable/ic_adult" />
+
 </PreferenceScreen>
